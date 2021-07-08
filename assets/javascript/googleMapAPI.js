@@ -54,8 +54,6 @@ function initMap() {
                 position: { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() },
                 map: map,
             });
-            var srcWeather = 'https://www.theweather.com/wid_loader/' + place.place_id;
-
 
             var infowindow = new google.maps.InfoWindow({
                 content: '<h5>' + place.name + '</h5>',
